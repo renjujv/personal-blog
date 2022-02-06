@@ -16,5 +16,6 @@ jobs:
           skip-publish: true
       - uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:
+          branch: master
           folder: public
 
