@@ -1,19 +1,19 @@
 name: Gatsby Publish
 
-on:
-  push:
-    branches:
-      - master-dev
+on: [push]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Github Pages Custom Deploy
-        uses: sterlingwes/gh-pages-deploy-action@v1.1
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: Gatsby-build
+        run: npm run build
+        
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:
-          access-token: ${{ secrets.PAT }}
-          source-directory: public
-          build-command: npm run deploy
-          deploy-branch: master-dev
+          branch: master-dev # The branch the action should deploy to.
+          folder: public # The folder the action should deploy.
