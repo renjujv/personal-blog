@@ -3,7 +3,7 @@ name: Gatsby Publish
 on:
   push:
     branches:
-      - master
+      - master-dev
 
 jobs:
   build:
@@ -16,4 +16,4 @@ jobs:
           access-token: ${{ secrets.PAT }}
           source-directory: public
           build-command: npm run build
-          deploy-branch: master
+          deploy-branch: master-dev
