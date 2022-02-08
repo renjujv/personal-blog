@@ -17,7 +17,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       
-      - name: Gatsby-GHPages-Deploy  
-        uses: enriikke/gatsby-gh-pages-action@v2
+      - name: Gatsby_Build-GHPages_Deploy
+        uses: enriikke/gatsby-gh-pages-action@v2.1.1
         with:
           access-token: ${{ secrets.PAT }}
+          gatsby-args: "--"
+          deploy-branch: "gh-pages"
