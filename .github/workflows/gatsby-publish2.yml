@@ -15,5 +15,5 @@ jobs:
         with:
           access-token: ${{ secrets.PAT }}
           source-directory: public
-          build-command: npm run build
+          build-command: npm run deploy
           deploy-branch: master-dev
