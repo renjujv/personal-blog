@@ -8,12 +8,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        
-      - name: Gatsby-build
-        run: npm run build
-        
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.2.3
+      
+      - name: gatsby build and gh pages deploy  
+        uses: enriikke/gatsby-gh-pages-action@v2
         with:
-          branch: master-dev # The branch the action should deploy to.
-          folder: public # The folder the action should deploy.
+          access-token: ${{ secrets.PAT }}
+        
+#       - name: Deploy
+#         uses: JamesIves/github-pages-deploy-action@v4.2.3
+#         with:
+#           branch: master-dev # The branch the action should deploy to.
+#           folder: public # The folder the action should deploy.
