@@ -10,12 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: srepollock/gatsby-gh-pages-action@v2.2.0
+      - name: Github Pages Custom Deploy
+        uses: sterlingwes/gh-pages-deploy-action@v1.1
         with:
           access-token: ${{ secrets.PAT }}
-          skip-publish: true
-      - uses: JamesIves/github-pages-deploy-action@v4.2.3
-        with:
-          branch: master
-          folder: public
-
+          source-directory: public
+          build-command: npm run build
+          deploy-branch: master
