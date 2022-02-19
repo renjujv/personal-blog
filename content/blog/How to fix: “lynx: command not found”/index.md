@@ -1,5 +1,5 @@
 ---
-title: How to fix: “lynx: command not found”
+title: "How to fix: 'lynx: command not found'"
 date: "2021-06-01T23:46:37.121Z"
 ---
 
