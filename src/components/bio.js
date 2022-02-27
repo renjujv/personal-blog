@@ -54,6 +54,7 @@ const Bio = () => {
             Linkedin</a><span> </span>
           <a href={`https://github.com/${social?.github || ``}`}>
             Github</a>
+          <hr/>
         </p>
       )}
     </div>

@@ -25,11 +25,11 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
+        <hr/>
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.com">Gatsby</a>
-        <br/>
-        <Link to="/rss.xml">RSS feed</Link>
+        <Link className="stick-right rss-link" to="/rss.xml">RSS feed</Link>
       </footer>
     </div>
   )
