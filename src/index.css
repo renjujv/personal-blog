@@ -1,0 +1,8 @@
+.global-wrapper {
+    background-color: beige;
+}
+
+.stick-right.rss-link {
+    position: absolute;
+    left: calc(var(--maxWidth-wrapper) + 3em);
+  }
