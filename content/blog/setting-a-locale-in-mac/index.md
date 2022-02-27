@@ -4,8 +4,6 @@ date: "2021-04-30T22:40:32.169Z"
 description: "Explains how to set up a locale in Mac OS."
 ---
 
-# Setting Locale in Mac
-
 If you have faced issues in your Applications, especially, terminal based programs, with regards to invalid Locale setting, please read on to know how to fix it.
 
 ## Steps
