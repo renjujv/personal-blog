@@ -2,7 +2,12 @@
     background-color: beige;
 }
 
+body {
+    background-image: url("./images/bg.jpg");
+    background-repeat: repeat-y;
+}
+
 .stick-right.rss-link {
     position: absolute;
     left: calc(var(--maxWidth-wrapper) + 3em);
-  }
+}
