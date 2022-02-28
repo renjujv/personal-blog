@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/usr/bin/bash
 
 #Get JQ to parse JSON response
 apt-get install jq
