@@ -36,10 +36,10 @@ jobs:
           python3 -m pip install pillow
           python3 ./.github/workflows/get_new_bg_image.py
         
-#       - name: switching from HTTPS to SSH
-#         run: git remote set-url origin ${{ secrets.ssh }}
-#       - name: check for changes
-#         run: git status
+      - name: Set git identity
+        run: |
+          git config --global user.email "renjujv@gmail.com"
+          git config --global user.name "Renju Jose"
 
       - name: stage changed files
         run: git add .
