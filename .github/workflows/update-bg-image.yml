@@ -32,7 +32,9 @@ jobs:
       #    echo test, and deploy your project.
 
       - name: Run a one-line script
-        run: python3 ./.github/workflows/get_new_bg_image.py
+        run: |
+          python3 -m pip install PIL
+          python3 ./.github/workflows/get_new_bg_image.py
         
 #       - name: switching from HTTPS to SSH
 #         run: git remote set-url origin ${{ secrets.ssh }}
