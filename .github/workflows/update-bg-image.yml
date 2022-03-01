@@ -33,7 +33,7 @@ jobs:
 
       - name: Run a one-line script
         run: |
-          python3 -m pip install PIL
+          python3 -m pip install pillow
           python3 ./.github/workflows/get_new_bg_image.py
         
 #       - name: switching from HTTPS to SSH
