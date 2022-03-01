@@ -23,3 +23,5 @@ jobs:
           access-token: ${{ secrets.PAT }}
           gatsby-args: "--"
           deploy-branch: "gh-pages"
+          git-config-name: "Renju Jose"
+          git-config-email: "renjujv@gmail.com"
