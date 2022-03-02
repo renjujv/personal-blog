@@ -8,21 +8,16 @@ orientation_fragment = '&orientation=landscape'
 query_fragment = '&query=dark+texture'
 complete_url = request_url+client_id_fragment+orientation_fragment+query_fragment
 output_filepath = './src/images/bg.jpg'
-blurred_output_filepath = './src/images/bg_blurred.jpg'
 
 # Actual implementation
 response_json = requests.get(complete_url).json()
 image_url = response_json.get('urls').get('regular')
-ImageContent = requests.get(image_url).content
-open(output_filepath,'wb').write(ImageContent)
+image_content = requests.get(image_url).content
+open(output_filepath,'wb').write(image_content)
 
 #Open existing image
-OriImage = Image.open(output_filepath)
-OriImage.show()
-
+original_image = Image.open(output_filepath)
 #Applying BoxBlur filter
-boxImage = OriImage.filter(ImageFilter.BoxBlur(5))
-boxImage.show()
-
+blurred_image = original_image.filter(ImageFilter.BoxBlur(5))
 #Save Boxblur image
-boxImage.save(blurred_output_filepath)
+blurred_image.save(output_filepath)

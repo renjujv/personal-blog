@@ -3,8 +3,7 @@
 }
 
 body {
-    background-image: url("./images/bg_blurred.jpg");
-    background-repeat: repeat-y;
+    background-image: url("./images/bg.jpg");
 }
 
 .stick-right.rss-link {
