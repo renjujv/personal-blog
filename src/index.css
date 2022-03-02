@@ -4,6 +4,7 @@
 
 body {
     background-image: url("./images/bg.jpg");
+    background-size: cover;
 }
 
 .stick-right.rss-link {
