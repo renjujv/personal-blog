@@ -1,9 +1,6 @@
 name: Update Background Image
 
 on:
-# run on schedule instead of on push
-#   push:
-#     branches: [ dev ]
   schedule:
     - cron: 0 6 * * *
 
