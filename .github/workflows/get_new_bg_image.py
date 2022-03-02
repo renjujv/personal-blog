@@ -21,3 +21,5 @@ original_image = Image.open(output_filepath)
 blurred_image = original_image.filter(ImageFilter.BoxBlur(5))
 #Save Boxblur image
 blurred_image.save(output_filepath)
+print('Image from '+image_url+' saved at '+output_filepath+' successfully')
+exit(0)
