@@ -12,12 +12,12 @@ output_filepath = './src/images/bg.jpg'
 # Actual implementation
 response_json = requests.get(complete_url).json()
 image_url = response_json.get('urls').get('regular')
-ImageContent = requests.get(image_url).content
-open(output_filepath,'wb').write(ImageContent)
+image_content = requests.get(image_url).content
+open(output_filepath,'wb').write(image_content)
 
 #Open existing image
-originalImage = Image.open(output_filepath)
+original_image = Image.open(output_filepath)
 #Applying BoxBlur filter
-blurredImage = originalImage.filter(ImageFilter.BoxBlur(5))
+blurred_image = original_image.filter(ImageFilter.BoxBlur(5))
 #Save Boxblur image
-blurredImage.save(output_filepath)
+blurred_image.save(output_filepath)
