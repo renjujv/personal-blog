@@ -1,8 +1,11 @@
 name: Update Background Image
 
 on:
-  push:
-    branches: [ dev ]
+# run on schedule instead of on push
+#   push:
+#     branches: [ dev ]
+  schedule:
+    - cron: 0 6 * * *
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -13,15 +16,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      
+      - name: Install dependencies
+        run: python3 -m pip install pillow
 
-      - name: Run a one-line script
-        run: |
-          python3 -m pip install pillow
-          ls -lah
-          python3 ./.github/workflows/get_new_bg_image.py
+      - name: Run the python script to update background image
+        run: python3 ./.github/workflows/get_new_bg_image.py
           
-      - name: Push changes
+      - name: Push the changes
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: secrets.PAT
-          branch: dev
+          branch: main
