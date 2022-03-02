@@ -17,6 +17,7 @@ jobs:
       - name: Run a one-line script
         run: |
           python3 -m pip install pillow
+          ls -lah
           python3 ./.github/workflows/get_new_bg_image.py
           
       - name: Push changes
