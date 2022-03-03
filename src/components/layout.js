@@ -24,12 +24,13 @@ const Layout = ({ location, title, children }) => {
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
-      <footer>
-        <hr/>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-        <Link className="stick-right rss-link" to="/rss.xml">RSS feed</Link>
+      <footer class='d-flex'>
+        <div><hr/></div>
+        <div class='d-flex f1'>
+          <span class='f1'>©{new Date().getFullYear()}, Built with <a href="https://www.gatsbyjs.com">Gatsby</a></span>
+          {/* <Link className="stick-right rss-link" to="/rss.xml">RSS feed</Link> */}
+          <Link class='f1 align-right' to="/rss.xml">RSS feed</Link>
+        </div>
       </footer>
     </div>
   )
