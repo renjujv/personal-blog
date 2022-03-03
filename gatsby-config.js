@@ -6,7 +6,7 @@ module.exports = {
       summary: ``,
     },
     description: `Personal Portfolio Site`,
-    siteUrl: `https://www.renjujose.live`,
+    siteUrl: `https://renjujv.github.io`,
     social: {
       twitter: `JOSNotHoSay`,
       linkedin: `renjujv`,
