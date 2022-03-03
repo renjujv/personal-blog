@@ -28,7 +28,6 @@ const Layout = ({ location, title, children }) => {
         <div><hr/></div>
         <div class='d-flex f1'>
           <span class='f1'>©{new Date().getFullYear()}, Built with <a href="https://www.gatsbyjs.com">Gatsby</a></span>
-          {/* <Link className="stick-right rss-link" to="/rss.xml">RSS feed</Link> */}
           <Link class='f1 align-right' to="/rss.xml">RSS feed</Link>
         </div>
       </footer>
