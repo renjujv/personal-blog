@@ -4,9 +4,18 @@
 
 body {
     background-image: url("./images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.stick-right.rss-link {
-    position: absolute;
-    left: calc(var(--maxWidth-wrapper) + 3em);
+.d-flex {
+    display: flex;
+}
+
+.f1 {
+    flex: 1;
+}
+
+.align-right {
+    text-align: right;
 }
