@@ -13,10 +13,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
-    strategy:
-      matrix:
-        node: ['14.17']
+#     Trying out setup-node step with caching
+#     strategy:
+#       matrix:
+#         node: ['14.17']
     
     steps:
       - name: Checkout
@@ -25,7 +25,8 @@ jobs:
       - name: Setup node with cache
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node }}
+          node-version: '14'
+          cache: 'npm'
       
       - name: Gatsby_Build-GHPages_Deploy
         uses: enriikke/gatsby-gh-pages-action@v2.1.1
