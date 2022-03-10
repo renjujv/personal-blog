@@ -2,7 +2,7 @@ import requests;
 from PIL import Image,ImageFilter,ImageDraw,ImageFont;
 
 image_path = './src/images/bg.jpg'
-font_path = '/Users/renju/Devworx/renjujv.github.io/src/'
+font_path = './src/'
 
 def query_image_from_Unsplash(query: str, orientation: str):
     request_url = 'https://api.unsplash.com/photos/random?'
@@ -43,10 +43,10 @@ def add_caption_on_image(image_path: str):
     
     d1 = ImageDraw.Draw(image)
     d1.text((20, image_height-50), image_caption, fill=(0, 0, 0),font=font,stroke_width=1,stroke_fill=(256, 256, 256))
-    image.show()
+    # image.show()
     image.save(image_path)
 
-response_json = query_image_from_Unsplash('post','landscape')
+response_json = query_image_from_Unsplash('dark texture','landscape')
 image_caption = get_image_caption(response_json)
 download_and_write_image(image_path=image_path)
 add_box_blur(image_path=image_path, blur_radius=5)
