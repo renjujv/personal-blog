@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <h1>Personal Blog</h1>
 
-[![CodeQL code analysis](https://github.com/renjujv/renjujv.github.io/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/renjujv/renjujv.github.io/actions/workflows/codeql-analysis.yml)
+[![CodeQL Code Analysis](https://github.com/renjujv/renjujv.github.io/actions/workflows/codeql-analysis.yml/badge.svg?branch=dev)](https://github.com/renjujv/renjujv.github.io/actions/workflows/codeql-analysis.yml)
 [![Auto-update background image daily](https://github.com/renjujv/renjujv.github.io/actions/workflows/update-bg-image.yml/badge.svg)](https://github.com/renjujv/renjujv.github.io/actions/workflows/update-bg-image.yml)
 [![Build Gatsby website](https://github.com/renjujv/renjujv.github.io/actions/workflows/gatsby-publish.yml/badge.svg)](https://github.com/renjujv/renjujv.github.io/actions/workflows/gatsby-publish.yml)
 [![Page publish-deploy](https://github.com/renjujv/renjujv.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/renjujv/renjujv.github.io/actions/workflows/pages/pages-build-deployment)
