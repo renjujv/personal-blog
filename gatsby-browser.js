@@ -9,4 +9,6 @@ import "./src/style.css"
 import "./src/index.css"
 
 // Highlighting for code blocks
-import "prismjs/themes/prism.css"
+//Using this for light theme
+//For dark theme, use a different theme - https://github.com/PrismJS/prism/tree/master/themes
+import "prismjs/themes/prism-coy.css"
