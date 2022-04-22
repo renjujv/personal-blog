@@ -6,7 +6,7 @@ module.exports = {
       summary: ``,
     },
     description: `Personal Portfolio Site`,
-    siteUrl: `https://renjujv.github.io`,
+    siteUrl: `https://renjujose.live`,
     social: {
       twitter: `JOSNotHoSay`,
       linkedin: `renjujv`,
@@ -54,6 +54,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-cname`,
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {
