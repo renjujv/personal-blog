@@ -6,6 +6,8 @@
 [![Build Gatsby website](https://github.com/renjujv/renjujv.github.io/actions/workflows/gatsby-publish.yml/badge.svg)](https://github.com/renjujv/renjujv.github.io/actions/workflows/gatsby-publish.yml)
 [![Page publish-deploy](https://github.com/renjujv/renjujv.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/renjujv/renjujv.github.io/actions/workflows/pages/pages-build-deployment)
 
+<img alt="Blog Screenshot" src="https://github.com/renjujv/renjujv.github.io/blob/de3b8ed30406dfd297967bce126ea9cf09c03488/static/Screenshot%202022-09-10%20at%201.57.39%20PM.png" width="80%" style="padding-left:5px;"/>
+
 ### Tech Used
 GatsbyJS, ReactJS, Github Actions, Python, HTML5, CSS, JS
 
