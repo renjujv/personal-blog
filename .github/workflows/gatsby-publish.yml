@@ -1,8 +1,6 @@
 name: Build Gatsby website
 
 on:
-  schedule:
-    - cron: 0 9 * * 0
   push:
     branches:
       - main
@@ -20,12 +18,12 @@ jobs:
       - name: Setup node with cache
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '16'
           cache: 'npm'
       
       - name: Gatsby_Build-GHPages_Deploy
         uses: enriikke/gatsby-gh-pages-action@v2.1.1
         with:
-          access-token: ${{ secrets.PAT }}
+          access-token: ${{ secrets.GITHUB_TOKEN }}
           gatsby-args: "--"
           deploy-branch: "gh-pages"
